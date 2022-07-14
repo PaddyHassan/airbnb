@@ -1,4 +1,4 @@
-import type { NextPage } from 'next'
+
 import Head from 'next/head'
 import Image from 'next/image'
 import Header from '../components/Header'
@@ -8,7 +8,7 @@ import MediumCard from '../components/MediumCard'
 import LargeCard from '../components/LargeCard'
 import Footer from '../components/Footer'
 
-const Home: NextPage = ({exploreData, cardsData}) => {
+export default function Home({exploreData, cardsData}) {
   return (
     <div className="">
       <Head>
@@ -75,4 +75,4 @@ export async function getStaticProps(){
   }
 }
 
-export default Home
+
